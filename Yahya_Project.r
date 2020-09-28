@@ -37,5 +37,5 @@ ggplot(df) + geom_bar(aes(x = USCPRBLK))
 ## Analysis
 
 The bar plot shows the frequency of people with a usual medical provider that is Black or African American. 
-<!-- #Categorical variables: 0= Not in universe, 1= No, 2=Yes -->
+<!-- #Categorical variables: 0= Not in universe, 1= No, 2=Yes-->
 
