@@ -14,7 +14,7 @@ install.packages(c("haven", "openxlsx", "gtools", "tidyverse", "dplyr", "ggplot2
   2) Download and save `Yahya_Project.Rmd` in the project folder of your choice in your desired directory.
   3) Open `Yahya_Project.Rmd` in `R`.
   4) Load the data in `R`
-  5) Use `R`. `R Studio` or run the code below in your terminal from the project folder
+  5) Knit `Yahya_Project.Rmd` in `R` or `R Studio` or run the code below in your terminal from the project folder
  
  ``` bash
 Rscript -e "rmarkdown::render('Yahya_Project.Rmd')"
