@@ -1,6 +1,6 @@
 # install R packages for analysis
 install:
-	Rscript -e "rmarkdown::render('install_packages.Rmd' quiet = TRUE )"
+	Rscript -e "rmarkdown::render('install_packages.Rmd')"
 
 # produce the final report
 Yahya_Project.html: DATA.csv Yahya_Project.Rmd
