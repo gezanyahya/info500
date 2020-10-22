@@ -1,6 +1,6 @@
 # install R packages for analysis
-make install:
-	install.packages(c("haven", "openxlsx", "gtools", "tidyverse", "dplyr", "ggplot2"))
+install:
+	Rscript -e "rmarkdown::render('install_packages.Rmd' quiet = TRUE )"
 
 # produce the final report
 Yahya_Project.html: DATA.csv Yahya_Project.Rmd
