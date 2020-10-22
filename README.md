@@ -31,12 +31,13 @@ This will create a file called `Yahya_Project.html` output in your directory tha
       
   - Use the following make command to produce the final report or run the code below in your terminal
   
-   ``` bash
+       ``` bash
       Yahya_Project.html: DATA.csv Yahya_Project.Rmd
-         Rscript -e "rmarkdown::render('Yahya_Project.Rmd' quiet = TRUE )"
-         ```
+         Rscript -e "rmarkdown::render('Yahya_Project.Rmd' quiet = TRUE )" 
+      ```    
          
   - Use the following make command to echo some helpful information about the Makefile or use the code below
+  
       ``` bash
      .PHONY: help
       help:
