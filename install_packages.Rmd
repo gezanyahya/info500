@@ -1,0 +1,12 @@
+---
+title: "install_packages"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+install.packages(c("haven", "openxlsx", "gtools", "tidyverse", "dplyr", "ggplot2"))
+```
