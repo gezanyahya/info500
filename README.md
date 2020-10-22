@@ -20,3 +20,17 @@ install.packages(c("haven", "openxlsx", "gtools", "tidyverse", "dplyr", "ggplot2
 Rscript -e "rmarkdown::render('Yahya_Project.Rmd')"
 ```
 This will create a file called `Yahya_Project.html` output in your directory that contains the results.
+
+## Using Makefile
+  1) Use the following make command to install R packages for analysis or run the code below in your terminal 
+      install:
+        Rscript -e "rmarkdown::render('install_packages.Rmd')"
+
+   2) Use the following make command to produce the final report or run the code below in your terminal
+      Yahya_Project.html: DATA.csv Yahya_Project.Rmd
+        Rscript -e "rmarkdown::render('Yahya_Project.Rmd' quiet = TRUE )"
+  
+  3) Use the following make command to echo some helpful information about the Makefile or use the code below
+      .PHONY: help
+      help:
+        @echo "Yahya_Project.html" : Generate final analysis report."
