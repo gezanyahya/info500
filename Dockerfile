@@ -16,4 +16,4 @@ RUN chmod +x /project/R/*.R
 ENV which_fig="Black_Medical_Providers"
 
 #make container entry point bash
-CMD /bin/bash
+CMD make -C project report
