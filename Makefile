@@ -11,7 +11,7 @@ Yahya_Project.html: Data/DATA.csv R/Yahya_Project.Rmd
 help:
 	@echo "Yahya_Project.html" : Generate final analysis report."
 	
---------------------------	
+
 #build docker image using the folowing:
 .PHONY: report
 report: R/report.Rmd figs/barchart.png
