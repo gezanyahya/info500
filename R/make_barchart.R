@@ -5,5 +5,7 @@ which_fig <- Sys.getenv("which_fig")
 
 data(DATA.csv)
 
-library(ggplot2)
+if(which_fig == "Black_Medical_Providers"){
+	library(ggplot2)
 ggplot(df) + geom_bar(aes(x = USCPRBLK))
+}
