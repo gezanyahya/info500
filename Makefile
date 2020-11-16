@@ -14,8 +14,6 @@ help:
 
 #build docker image using the folowing:
 .PHONY: report
-report: R/report.Rmd figs/barchart.png
-	cd R; Rscript -e "rmarkdown::render('report.Rmd', output_file = '../output/report.html')"
+report: Data/DATA.csv R/Yahya_Project.Rmd
+	cd R; Rscript -e "rmarkdown::render('R/Yahya_Project.Rmd' quiet = TRUE )"
 
-figs/barchart.png: R/make_barchart.R
-	Rscript R/make_barchart.R
