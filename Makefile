@@ -12,9 +12,6 @@ help:
 	@echo "Yahya_Project.html" : Generate final analysis report."
 	
 
-##	make report: generate final html report
-report: report.html
-
 ##	make build: build the docker image
 build: Dockerfile
 	docker build -t gezanyahya/info550_project
