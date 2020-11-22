@@ -1,5 +1,8 @@
 FROM rocker/tidyverse
 
+#install R packages needed for analysis
+RUN Rscript -e "install.packages('tidyverse')"
+
 #make a project directory in the container
 RUN mkdir /project
 
