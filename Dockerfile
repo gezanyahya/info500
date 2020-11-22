@@ -10,4 +10,4 @@ COPY ./ /project/
 RUN chmod +x /project/R/*.R
 
 #make container entry point bash
-CMD /bin/bash 
+CMD make -C project report.html
