@@ -10,7 +10,6 @@ report.html: Data/DATA.csv R/Yahya_Project.Rmd
 .PHONY: help
 help:
 	@echo "Yahya_Project.html" : Generate final analysis report."
-	
 
 ##	make build: build the docker image
 build: Dockerfile
