@@ -9,7 +9,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 <!-- Load my packages and data-->
 ```{r}
-library(tidyverse)
+library(haven)
+library(openxlsx)
+library(gtools)
 df<- read.csv("./DATA.csv")
 summary(df)
 nrow(df)
