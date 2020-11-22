@@ -7,11 +7,9 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-<!-- Load my data-->
+<!-- Load my packages and data-->
 ```{r}
-library(haven)
-library(openxlsx)
-library(gtools)
+library(tidyverse)
 df<- read.csv("./DATA.csv")
 summary(df)
 nrow(df)
