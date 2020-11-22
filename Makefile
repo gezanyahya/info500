@@ -1,5 +1,5 @@
 # install R packages for analysis
-install:
+install: R/install_packages.Rmd
 	Rscript -e "rmarkdown::render('R/install_packages.Rmd')"
 
 # produce the final report
@@ -16,6 +16,6 @@ help:
 report: report.html
 
 ##	make build: build the docker image
-build:
-	docker build -t info550_project
+build: Dockerfile
+	docker build -t gezanyahya/info550_project
 
