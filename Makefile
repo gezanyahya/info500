@@ -14,5 +14,5 @@ help:
 
 ##	make build: build the docker image
 build: Dockerfile
-	docker build -t gezanyahya/info550_project
+	docker build -t gezanyahya/info550_project:project
 
