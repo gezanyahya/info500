@@ -34,13 +34,13 @@ This will create a file called `Yahya_Project.html` output in your directory tha
 3) Pull the image from my DockerHub repository by running the following code
 
 ```bash
-     docker pull gezanyahya/info550_project
+     docker pull gezanyahya/info550_project:project
  ```
   
 4) To get the final report from the image, mount your local directory to the directory in the container by running the following code
  
  ``` bash
-     docker run -v /insert_local_directory_path/:/project/ gezanyahya/info500_project
+     docker run -v /insert_local_directory_path/:/project/ gezanyahya/info500_project:project
  ```
  
  This will create a file called `report.html` output in your local working directory.
