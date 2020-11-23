@@ -29,7 +29,7 @@ This will create a file called `Yahya_Project.html` output in your directory tha
      
      
 ## Using Docker to execute the analysis
-1) Download and save all files from my info550_project repository into the local directory of your choice
+1) Download and save all files from this info550_project repository into the local directory of your choice
 2) In `Terminal`, navigate to the local directory 
 3) Pull the image from my DockerHub repository by running the following code
 
