@@ -40,7 +40,9 @@ This will create a file called `Yahya_Project.html` output in your directory tha
 4) To get the final report from the image, mount your local directory to the directory in the container by running the following code
  
  ``` bash
-     docker run -v /insert_local_directory_path/:/project/ gezanyahya/info500_project:project
+     docker run -v /insert_local_directory_path:/project gezanyahya/info550_project:project
  ```
  
  This will create a file called `report.html` output in your local working directory.
+ 
+
